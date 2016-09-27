@@ -1,5 +1,9 @@
 .idea/*
 
+EE05/*
+
+target/*
+
 *.class
 
 *.jar
