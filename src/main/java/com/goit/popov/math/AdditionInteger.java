@@ -6,9 +6,14 @@ package com.goit.popov.math;
  * @author Andrey Popov
  * @version 1.0
  */
-public class AdditionInteger implements Addition<Integer> {
+@Deprecated
+public class AdditionInteger implements AdditionNumeric<Integer> {
 
         public Integer add(Integer number1, Integer number2) {
-                return number1 + number2;
+                return number2 + number1;
+        }
+
+        public Number add(Number number1, Number number2) {
+                return null;
         }
 }

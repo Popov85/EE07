@@ -6,6 +6,7 @@ package com.goit.popov.math;
  * @author Andrey Popov
  * @version 1.0
  */
+@Deprecated
 public interface Subtraction<T> {
 
     /*Subtracts two objects*/

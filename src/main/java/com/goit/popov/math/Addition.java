@@ -6,9 +6,10 @@ package com.goit.popov.math;
  * @author Andrey Popov
  * @version 1.0
  */
+@Deprecated
 public interface Addition<T> {
     /*
-    Adds two objects
+        Adds two objects
      */
-    T add(T number1, T number2);
+    T add(T object1, T object2);
 }

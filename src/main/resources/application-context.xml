@@ -4,5 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="SubInt" class = "com.goit.popov.math.SubtractionInteger"/>
     <bean id="AddInt" class = "com.goit.popov.math.AdditionInteger"/>
+    <bean id="Parser" class = "com.goit.popov.app.InputParser"/>
 
 </beans>
