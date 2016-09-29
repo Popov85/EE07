@@ -3,7 +3,7 @@ package com.goit.popov.math;
 /**
  *
  */
-public class OperandDouble implements OperandNumeric<Double> {
+public class OperationDouble implements OperationNumeric<Double> {
 
         public Double add(Double number1, Double number2) {
                 return number1+number2;

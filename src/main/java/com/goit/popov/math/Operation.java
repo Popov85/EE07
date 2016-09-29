@@ -1,12 +1,12 @@
 package com.goit.popov.math;
 
 /**
- * Operand interface for arithmetic operations on different dataTypes
+ * Operation interface for arithmetic operations on different dataTypes
  *
  * @author Andrey Popov
  * @version 1.0
  */
-public interface Operand<T> {
+public interface Operation<T> {
 
         T add(T object1, T object2);
 

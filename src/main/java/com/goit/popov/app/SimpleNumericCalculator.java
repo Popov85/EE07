@@ -1,21 +1,15 @@
 package com.goit.popov.app;
 
-import com.goit.popov.math.OperandNumeric;
-import org.springframework.context.ApplicationContext;
+import com.goit.popov.math.OperationFloat;
+import com.goit.popov.math.OperationNumeric;
 
 /**
  * Created by Andrey on 28.09.2016.
  */
-public class SimpleNumericCalculator implements NumericCalculator {
+public class SimpleNumericCalculator {
 
-        private final ApplicationContext applicationContext = App.getApplicationContext();
-
-        private OperandNumeric operand;
-
-        private String operator;
-
-
-        public Number calculate(Number operand1, Number operand2) throws Exception {
+        public Number calculate(Number operand1, Number operand2, OperationNumeric operand, String operator) throws Exception {
+                System.out.println("Actual class is: "+operand.getClass());
                 if (operator.equals("+")) {
                         return operand.add(operand1, operand2);
                 } else if (operator.equals("-")) {

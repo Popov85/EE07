@@ -1,12 +1,12 @@
 package com.goit.popov.math;
 
 /**
- * Operand interface for arithmetic operations on numeric dataTypes
+ * Operation interface for arithmetic operations on numeric dataTypes
  *
  * @author Andrey Popov
  * @version 1.0
  */
-public interface OperandNumeric<T extends Number> extends Operand<T> {
+public interface OperationNumeric<T extends Number> extends Operation<T> {
 
         T add(T object1, T object2);
 

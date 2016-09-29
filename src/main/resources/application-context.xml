@@ -2,8 +2,14 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="SubInt" class = "com.goit.popov.math.SubtractionInteger"/>
-    <bean id="AddInt" class = "com.goit.popov.math.AdditionInteger"/>
     <bean id="Parser" class = "com.goit.popov.app.InputParser"/>
+    <bean id="OperationInteger" class = "com.goit.popov.math.OperationInteger"/>
+    <bean id="OperationLong" class = "com.goit.popov.math.OperationLong"/>
+    <bean id="OperationFloat" class = "com.goit.popov.math.OperationFloat"/>
+    <bean id="OperationDouble" class = "com.goit.popov.math.OperationDouble"/>
+
+    <bean id="Calculator" class = "com.goit.popov.app.SimpleNumericCalculator"/>
+    <bean id="TypeResolver" class = "com.goit.popov.app.TypeResolver"/>
+    <bean id="PairResolver" class = "com.goit.popov.app.PairResolver"/>
 
 </beans>
