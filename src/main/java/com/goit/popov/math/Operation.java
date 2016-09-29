@@ -1,11 +1,12 @@
 package com.goit.popov.math;
 
-import com.sun.scenario.effect.impl.sw.java.JSWBlend_OVERLAYPeer;
-
 /**
- * Created by Andrey on 28.09.2016.
+ * Operand interface for arithmetic operations on different dataTypes
+ *
+ * @author Andrey Popov
+ * @version 1.0
  */
-public interface OperandNumeric<T extends Number> extends Operand<T> {
+public interface Operand<T> {
 
         T add(T object1, T object2);
 
@@ -14,4 +15,5 @@ public interface OperandNumeric<T extends Number> extends Operand<T> {
         T multiply(T object1, T object2);
 
         T divide(T object1, T object2);
+
 }

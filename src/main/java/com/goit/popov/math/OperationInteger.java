@@ -1,9 +1,12 @@
 package com.goit.popov.math;
 
 /**
- * Created by Andrey on 28.09.2016.
+ * Operand implementation for arithmetic operations on Integers
+ *
+ * @author Andrey Popov
+ * @version 1.0
  */
-public class OperandInteger implements Operand<Integer> {
+public class OperandInteger implements OperandNumeric<Integer> {
         
         public Integer add(Integer number1, Integer number2) {
                 return number1+number2;
