@@ -25,7 +25,7 @@ public class TypeResolver implements Resolver {
                 }
         }
 
-        public boolean isInteger(String input) {
+        private boolean isInteger(String input) {
                 try {
                         operand = Integer.parseInt(input);
                         return true;
@@ -35,7 +35,7 @@ public class TypeResolver implements Resolver {
                 }
         }
 
-        public boolean isLong(String input) {
+        private boolean isLong(String input) {
                 try {
                         operand = Long.parseLong(input);
                         return true;
@@ -45,7 +45,7 @@ public class TypeResolver implements Resolver {
                 }
         }
 
-        public boolean isFloat(String input) {
+        private boolean isFloat(String input) {
                 try {
                         operand = Float.parseFloat(input);
                         return true;
@@ -55,7 +55,7 @@ public class TypeResolver implements Resolver {
                 }
         }
 
-        public boolean isDouble(String input) {
+        private boolean isDouble(String input) {
                 try {
                         operand = Double.parseDouble(input);
                         return true;

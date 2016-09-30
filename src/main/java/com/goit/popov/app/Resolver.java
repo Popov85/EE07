@@ -9,12 +9,4 @@ package com.goit.popov.app;
 public interface Resolver {
 
         Number resolveType(String specimen) throws Exception;
-
-        boolean isInteger(String input);
-
-        boolean isLong(String input);
-
-        boolean isFloat(String input);
-
-        boolean isDouble(String input);
 }
