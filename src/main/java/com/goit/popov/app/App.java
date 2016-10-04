@@ -1,5 +1,8 @@
 package com.goit.popov.app;
 
+import com.goit.popov.math.OperationFloatImpl;
+import com.goit.popov.math.OperationFloatIntImpl;
+import com.goit.popov.math.OperationNumericT;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.io.BufferedReader;
@@ -16,16 +19,16 @@ import java.io.InputStreamReader;
 public class App {
 
         private static ApplicationContext applicationContext =
-                new ClassPathXmlApplicationContext("application-context.xml");
+                new ClassPathXmlApplicationContext("application-context.xml","aop-context.xml");
 
-        private static InputParser inputParser;
+        private static Parser inputParser;
         private static SimpleNumericCalculator calc;
         private static TypeResolver typeResolver;
 
         public static void main(String[] args) {
                 try {
                         String line = getLine("Enter a math expression:\n");
-                        inputParser = (InputParser) applicationContext.getBean("Parser");
+                        inputParser = (InputParserExtended) applicationContext.getBean("Parser");
                         typeResolver = (TypeResolver) applicationContext.getBean("TypeResolver");
                         Number operand1 = typeResolver.resolveType(inputParser.getFirstArgument(line));
                         Number operand2 = typeResolver.resolveType(inputParser.getSecondArgument(line));
@@ -35,7 +38,6 @@ public class App {
                 } catch (Exception e) {
                         System.out.println(e.getMessage());
                 }
-
         }
 
         private static String getLine(String explanation) {

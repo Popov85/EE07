@@ -1,0 +1,8 @@
+2016-10-04 21:33:54 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3d82c5f3: startup date [Tue Oct 04 21:33:54 EEST 2016]; root of context hierarchy
+2016-10-04 21:33:54 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [application-context.xml]
+2016-10-04 21:33:54 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [aop-context.xml]
+2016-10-04 21:33:57 INFO  log:20 - User: Andrey on Tue Oct 04 21:33:57 EEST 2016 executed method: multiply with the following parameters: 2 & 2
+2016-10-04 21:34:02 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3d82c5f3: startup date [Tue Oct 04 21:34:02 EEST 2016]; root of context hierarchy
+2016-10-04 21:34:02 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [application-context.xml]
+2016-10-04 21:34:02 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [aop-context.xml]
+2016-10-04 21:34:06 INFO  log:20 - User: Andrey on Tue Oct 04 21:34:06 EEST 2016 executed method: multiply with the following parameters: 3 & 3

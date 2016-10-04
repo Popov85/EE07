@@ -23,7 +23,7 @@ public class InputParserExtended implements Parser {
         }
 
         public boolean ifContains(String line) {
-                for(int i =0; i < OPERATIONS_AS_ARRAY.length; i++) {
+                for(int i=0; i < OPERATIONS_AS_ARRAY.length; i++) {
                         if(line.contains(OPERATIONS_AS_ARRAY[i])) {
                                 symbol = OPERATIONS_AS_ARRAY[i];
                                 return true;
